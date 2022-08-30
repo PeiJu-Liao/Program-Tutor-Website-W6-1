@@ -16008,7 +16008,7 @@ footer {
 }
 
 .points__point-bg1 {
-  background: url("../../../assets/images/info01.jpg") center/cover;
+  background: url("../images/info01.jpg") center/cover;
 }
 
 .points__point-bg1::after {
@@ -16022,7 +16022,7 @@ footer {
 }
 
 .points__point-bg2 {
-  background: url("../../../assets/images/info02.jpg") center/cover;
+  background: url("../images/info02.jpg") center/cover;
 }
 
 .points__point-bg2::after {
@@ -16036,7 +16036,7 @@ footer {
 }
 
 .points__point-bg3 {
-  background: url("../../../assets/images/info03.jpg") center/cover;
+  background: url("../images/info03.jpg") center/cover;
 }
 
 .points__point-bg3::after {
@@ -16050,7 +16050,7 @@ footer {
 }
 
 .points__point-bg4 {
-  background: url("../../../assets/images/info04.jpg") center/cover;
+  background: url("../images/info04.jpg") center/cover;
 }
 
 .points__point-bg4::after {
