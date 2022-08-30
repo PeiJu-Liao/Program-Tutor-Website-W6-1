@@ -15774,7 +15774,7 @@ body {
 .header {
   margin-top: 5.625rem;
   height: calc(100vh - 5.625rem);
-  background: url("../../../assets/images/bg_home.jpg") bottom/cover;
+  background: url("../../assets/images/bg_home.jpg") bottom/cover;
 }
 
 .header__banner-titleWrap {
