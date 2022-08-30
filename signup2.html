@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    <%- title %>
+    Week6
   </title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet"
@@ -115,7 +115,68 @@
   </div>
   </div>
 
-  <%- contents %>
+  
+<main>
+  <article class="signup bg-black">
+    <div class="timelinePart">
+      <div class="container">
+        <div class="py-6">
+          <!-- 付款時間軸 -->
+          <div class="row justify-content-center">
+            <div class="col-9 col-md-7 timeline">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 col-md-5">
+              <div class="timeline-pointer text-center step-1 active">
+                <p class="pt-6">課程報名</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="timeline-pointer text-center step-2 active">
+                <p class="pt-6">信用卡付款</p>
+              </div>
+            </div>
+            <div class="col-3 col-md-5">
+              <div class="timeline-pointer text-center step-3">
+                <p class="pt-6">付款成功</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center pb-6 pt-md-11 pb-md-15">
+        <div class="col-10 col-lg-4 p-6 py-md-11 px-md-8 bg-gray-dark text-white text-center">
+          <p class="fs-4 fw-bold mb-6">信用卡付款</p>
+          <p class="mb-4">請輸入信用卡資訊進行付款</p>
+          <form action="" class="step2 text-start">
+            <div class="mb-4">
+              <label for="creditAccount" class="form-label">信用卡帳號</label>
+              <input type="text" class="form-control" id="creditAccount" placeholder="Xxxx-xxxx-xxxx-xxxx">
+            </div>
+            <div class="mb-4">
+              <label for="savePassword" class="form-label">安全碼</label>
+              <input type="password" class="form-control" id="savePassword" placeholder="***">
+            </div>
+            <div class="mb-4">
+              <label for="validData" class="form-label">有效日期</label>
+              <input type="text" class="form-control" id="validData" placeholder="(MM-YY)">
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+              <p class="mb-6 mb-md-0">NT1600</p>
+              <a href="./signup3.html" role="button"
+                class="btn signup__btn py-2 px-md-11 text-white border-0 fs-6 text-nowrap" type="button">下一步</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </article>
+</main>
 
     <footer class="bg-gray-dark text-light text-center">
       <p>Coding Home © 2022 All Rights Reserved</p>
