@@ -1,0 +1,57 @@
+---
+title: Week6
+layout: ./app/layout.ejs
+engine: ejs
+current: all
+---
+
+<main>
+  <article class="signup bg-black vh-100">
+    <div class="timelinePart">
+      <div class="container">
+        <!-- 付款時間軸 -->
+        <div class="py-6">
+          <div class="row justify-content-center">
+            <div class="col-9 col-md-7 timeline">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 col-md-5">
+              <div class="timeline-pointer text-center step-1 active">
+                <p class="pt-6">課程報名</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="timeline-pointer text-center step-2 active">
+                <p class="pt-6">信用卡付款</p>
+              </div>
+            </div>
+            <div class="col-3 col-md-5">
+              <div class="timeline-pointer text-center step-3 active">
+                <p class="pt-6">付款成功</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div
+          class="step3 col-10 col-lg-4 p-6 py-md-11 px-md-8 mt-6 mt-md-11 m-auto bg-gray-dark text-white text-center">
+          <h2 class="mb-6 mb-md-8 fs-4">
+            <span class="material-symbols-outlined align-middle text-primary">
+              verified
+            </span>
+            完成訂購
+          </h2>
+          <p class="mb-6 mb-md-8">恭喜您已完成「2022 Python 全攻略｜從入門到實務」課程報名，請注意郵件訊息，家教老師將與您聯繫！</p>
+          <a href="./tutorial.html" role="button"
+            class="btn signup__btn py-2 px-11 text-white border-0 fs-6 text-nowrap" type="button">看看其他課程</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </article>
+</main>

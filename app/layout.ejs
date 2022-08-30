@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- NOTE: Swiper Loading -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- NOTE: Data Picker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+
+</head>
+
+<body>
+  <!-- FIXME: 底線處理 / menu-list hover處理 -->
+  <nav class="nav fixed-top bg-gray-dark position-fixed">
+    <div class="container">
+      <div class="nav__wrap d-flex justify-content-between align-items-center">
+        <!-- Nav Logo -->
+        <a href="./index.html" class="nav__logo-1 d-md-none">
+          <img src="./assets/images/logo2.svg" alt="logo">
+        </a>
+        <a href="./index.html" class="nav__logo-2 d-none d-md-block">
+          <img src="./assets/images/logo.svg" alt="logo">
+        </a>
+
+        <!-- Nav Hamburger -->
+        <a href="#navToggle" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="navToggle"
+          class="nav__ham d-md-none p-2">
+        </a>
+
+        <!-- Nav Menu -->
+        <ul class="nav__menu d-none d-md-flex">
+          <li class="me-11 nav__item">
+            <a href="./index.html" class="link-white">首頁</a>
+          </li>
+          <li class="me-11 nav__item">
+            <a href="./tutorial.html" class="link-white">課程介紹</a>
+          </li>
+          <li class="nav__item" data-bs-toggle="modal" data-bs-target="#loginModal">
+            <a href="#" class="link-white">
+              <span class="material-icons align-text-bottom">
+                account_circle
+              </span>
+              會員登入
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <ul class="collapse bg-gray-dark position-absolute top-100 start-0 w-100 text-center d-md-none" id="navToggle">
+      <a href="./index.html" class="border-bottom border-light py-4">
+        首頁
+      </a>
+      <a href="./tutorial.html" class="border-bottom border-light py-4">
+        課程介紹
+      </a>
+      <a href="#" class="border-bottom border-light py-4" data-bs-toggle="modal" data-bs-target="#loginModal">
+        會員登入
+      </a>
+    </ul>
+
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="login modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="modal-content py-6 rounded-0 bg-gray-dark border-white col-md-6">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="login__content d-flex flex-column text-white">
+              <h2 class="text-center fs-4 fw-bold mb-8">登入</h2>
+
+              <div class="mb-6">
+                <label for="email" class="form-label">信箱</label>
+                <input type="email" class="form-control" id="email" placeholder="請輸入信箱">
+              </div>
+              <div class="mb-6">
+                <label for="password" class="form-label">密碼</label>
+                <input type="password" class="form-control" id="password" placeholder="請輸入信箱">
+              </div>
+
+              <button type="button" class="btn border-0 login__loginLocal py-2 mb-11 text-white">登入</button>
+
+              <div class="login__way text-center mb-4">
+                <span class="px-2 text-light d-inline-block bg-gray-dark">其他登入方式</span>
+              </div>
+
+              <a href="#" class="mb-4 py-2 px-8 d-flex align-items-center btn btn-outline-white bdrs-4" role="button">
+                <img src="./assets/images/icon_fb.svg" alt="fb" width="24px" class="d-inline">
+                <span class="flex-fill text-center me-6">Facebook登入</span>
+              </a>
+              <a href="#" class="mb-4 py-2 px-8 d-flex align-items-center btn btn-outline-white bdrs-4" role="button">
+                <img src="./assets/images/icon_google.svg" alt="google" width="24px">
+                <span class="flex-fill text-center me-6">Google登入</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <%- contents %>
+
+    <footer class="bg-gray-dark text-light text-center">
+      <p>Coding Home © 2022 All Rights Reserved</p>
+    </footer>
+
+    <!-- Swiper Loading -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+</body>
+
+</html>

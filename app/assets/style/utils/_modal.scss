@@ -1,0 +1,27 @@
+.login {
+  &__content {
+    min-width: 21rem;
+    margin: 0 auto;
+  }
+
+  &__way {
+    position: relative;
+    z-index: 0;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      border-top: 1px solid $gray-600;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  &__loginLocal {
+    @include btn-bg-linear;
+  }
+}

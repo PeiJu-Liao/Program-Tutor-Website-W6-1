@@ -1,0 +1,41 @@
+.features {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .title {
+    position: relative;
+    @include baseline(50%, $color-primary);
+  }
+
+  &__feature {
+    border: 1px solid transparent;
+    color: $gray-500;
+
+    .material-icons,
+    .material-symbols-outlined {
+      font-size: 50px;
+    }
+
+    &:hover,
+    &.active {
+      border-color: $color-primary;
+      border-radius: 0.75rem;
+      background-color: $gray-700;
+      color: $color-white;
+
+      & span {
+        @include text-bg-linear;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+}
+
+@include md {
+  .features {
+    .title {
+      @include baseline(0, $color-primary);
+    }
+  }
+}
